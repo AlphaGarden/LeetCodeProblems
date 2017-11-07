@@ -73,7 +73,6 @@ class Solution(object):
                 end = i + m_len/2
         return s[start:end+1]
 
-
 solution = Solution()
 test_str = 'abbabba'
 test_str2="flsuqzhtcahnyickkgtfnlyzwjuiwqiexthpzvcweqzeqpmqwkydhsfipcdrsjkefehhesubkirhalgnevjug" \
@@ -86,7 +85,4 @@ test_str2="flsuqzhtcahnyickkgtfnlyzwjuiwqiexthpzvcweqzeqpmqwkydhsfipcdrsjkefehhe
           "nljzffszkzzqgofdlwyknqfruhdkvmvrrjpijcjomnrjjubfccaypkpfokohvkqndptciqqiscvmpozlyyrwobeuazsaw" \
           "timnawquogrohcrnmexiwvjxgwhmtpykqlcfacuadyhaotmmxevqwarppknoxthsmrrknu"
 print len(test_str2)
-reversed_str = test_str[7:7]
-print len(reversed_str)
-print reversed_str
 print solution.longestPalindrome(test_str)
