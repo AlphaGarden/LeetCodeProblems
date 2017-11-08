@@ -76,9 +76,22 @@ class Solution(object):
             l2.next = self.rec_mergeTwoLists(l1,l2.next)
             return l2
 
-    # In_place_Recursively
+    # In_place_Iteratively
     def in_place_mergeTwoLists(self,l1,l2):
-        return None
+        dummy = cur = ListNode(0)
+        dummy.next = l1 #The first node of l1
+        while l1 and l2:
+            if l1.val < l2.val:#When l1.val is smaller l2.val
+                l1 = l1.next#we skip the element
+            else:#When l1.val is larger than l2.val, insert the l2's element into l1
+                nex = cur.next
+                cur.next = l2
+                temp  = l2.next
+                l2.next =nex
+                l2 = temp
+            cur = cur.next # every time tracks the last number of ordered sequence of l1
+        cur.next = l1 or l2
+        return dummy.next
 
 ln10 = ListNode(0)
 ln11 = ListNode(1)
@@ -93,7 +106,7 @@ ln21.next=ln22
 
 solution = Solution()
 # print ln10.val
-cur = solution.rec_mergeTwoLists(ln10,ln20)
+cur = solution.in_place_mergeTwoLists(ln10,ln20)
 while(True):
     if cur != None:
         print cur.val
