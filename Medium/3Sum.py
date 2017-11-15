@@ -29,11 +29,6 @@ class Solution(object):
             left,right = i+1,len(nums)-1
             while left < right:
                 s = sort_nums[i] + sort_nums[left] + sort_nums[right]
-                # Skip duplicated sequence
-                while sort_nums[left] == sort_nums[left + 1]:
-                    left = left + 1
-                while sort_nums[right] == sort_nums[right - 1]:
-                    right = right - 1
                 # we increase the left(min) value
                 if s < 0 :
                     left = left + 1
@@ -45,12 +40,20 @@ class Solution(object):
                     ans.append([sort_nums[i],sort_nums[left],sort_nums[right]])
                     left = left + 1
                     right = right -1
+                    # Skip duplicated sequence
+                    while left < right and sort_nums[left] == sort_nums[left - 1]:
+                        left = left + 1
+                    while right > left and sort_nums[right] == sort_nums[right + 1]:
+                        right = right - 1
+
+
         return ans
-S = [-4, -1, -1,-1, 0, 1, 2]
+s1 = [-1,0,1,2,-1,-4]
+s2 = [0,0,0]
+s3 = [-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]
 solution = Solution()
 
-print solution.threeSum(S)
-
+print solution.threeSum(s3)
 
 
 '''
