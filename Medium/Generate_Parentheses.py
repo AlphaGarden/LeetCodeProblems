@@ -12,16 +12,20 @@ For example, given n = 3, a solution set is:
 ]
 '''
 
-
+"""
+        :type n: int
+        :rtype: List[str]
+        """
 class Solution(object):
     def generateParenthesis(self, n):
         def generate(temp,left,right,parents=[]):
             if left: generate(temp+'(',left-1,right)
-            if right> left:
-        """
-        :type n: int
-        :rtype: List[str]
-        """
+            if right> left: generate(temp + ')',left,right-1)
+            if not right: parents.append(temp)
+            return parents
+        return generate('',n,n)
+
+
 
 solution = Solution()
-print solution.generateParenthesis(4)
+print solution.generateParenthesis(20)
