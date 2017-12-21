@@ -27,15 +27,16 @@ class Solution(object):
         max_edge = 0
         index = 0
         length = len(nums)
-        while(index<length):
-            max_edge = max(nums[index]+index, max_edge)
-            if(max_edge >= length-1):
+        while (index < length):
+            max_edge = max(nums[index] + index, max_edge)
+            if (max_edge >= length - 1):
                 return True
-            elif(max_edge == index and nums[index]== 0):
+            elif (max_edge == index and nums[index] == 0):
                 return False
             else:
                 index += 1
         return False
+
 
 solution = Solution()
 testcases = [
