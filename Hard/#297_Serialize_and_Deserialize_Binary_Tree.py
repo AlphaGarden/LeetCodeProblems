@@ -62,6 +62,7 @@ class Codec:
         :type data: str
         :rtype: TreeNode
         """
+
         SYMBOL_SEPARATOR = ' '
         SYMBOL_NONE = 'X'
         if data == "": return None
@@ -81,17 +82,19 @@ class Codec:
                 right = TreeNode(value_list[index])
                 parent.right = right
                 queue.put(right)
-            index +=1
+            index += 1
         return root
 
         # Your Codec object will be instantiated and called as such:
         # codec = Codec()
         # codec.deserialize(codec.serialize(root))
+
 root1 = TreeNode(1)
 l1 = TreeNode(2)
 l2 = TreeNode(3)
 r2 = TreeNode(4)
 r1 = TreeNode(5)
+
 # root.left = l1
 # root.right = r1
 # l1.left = l2
