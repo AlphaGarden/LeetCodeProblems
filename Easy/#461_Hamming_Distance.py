@@ -36,8 +36,8 @@ class Solution(object):
         :type y: int
         :rtype: int
         """
-        # Approach 1: straight forward #
 
+        # Approach 1: straight forward #
         # bx = bin(x)[2:]
         # by = bin(y)[2:]
         # i, count = -1, 0
@@ -60,6 +60,7 @@ class Solution(object):
         # return count
 
         # Approach 2: one line code using the xor operator
+
         return bin(x^y).count('1')
 
 

@@ -38,7 +38,8 @@ class Solution(object):
         """
         # At the base case when both of them are empty tree
         if not t1 and not t2: return None
-        root = TreeNode(t1.val if t1 else 0 + t2.val if t2 else 0)
+        # root = TreeNode(t1.val if t1 else 0 + t2.val if t2 else 0)
+        root = TreeNode((t1.val if t1 else 0) + (t2.val if t2 else 0))
         root.left = self.mergeTrees(t1 and t1.left, t2 and t2.left)
         root.right = self.mergeTrees(t1 and t1.right, t2 and t2.right)
         # Out of recursive limitation
@@ -47,6 +48,7 @@ class Solution(object):
         return root
 
     """
+     Attention: for usage of 'and' operator in python
      Python does have some additional functionality in its boolean operators.
      Knowing these helps you write better code.
      Operators are short circuiting. Consider the statement a and b: 
@@ -56,3 +58,7 @@ class Solution(object):
      For example, consider an optional dictionary argument. 
      You can test whether it is set, and test one of its key within one expression - the later would be an invalid operation otherwise.
      """
+
+    """
+    for 
+    """
