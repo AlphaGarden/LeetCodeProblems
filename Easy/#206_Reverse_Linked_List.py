@@ -30,7 +30,9 @@ class Solution(object):
     # Recursive way
     def __init__(self):
         self.start = None
-
+        # For the nested function of python 2.7, It is not allowed to access the
+        # outer variable of the outer function
+        # Be careful
     def reverseList(self, head):
 
         if not head:
