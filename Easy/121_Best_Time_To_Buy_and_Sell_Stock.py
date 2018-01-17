@@ -15,16 +15,26 @@ Output: 0
 In this case, no transaction is done, i.e. max profit = 0.
 """
 
-
+import sys
 class Solution(object):
     def maxProfit(self, prices):
         """
         :type prices: List[int]
         :rtype: int
         """
+        ans = 0
+        min_buy  = sys.maxint
+        for i in prices:
+            if i < min_buy:
+                min_buy = i
+            elif (i - min_buy) > ans:
+                ans = i - min_buy
+        return ans
+
 
 
 if __name__ == '__main__':
-
+    test_case = [7, 6, 4, 3, 1]
+    test_case_2 = [7, 1, 5, 3, 6, 4]
     solution = Solution()
-    print solution.maxProfit()
+    print solution.maxProfit(test_case_2)
