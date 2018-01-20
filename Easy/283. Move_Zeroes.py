@@ -9,7 +9,13 @@ Minimize the total number of operations.
 
 '''
 
-
+"""
+we scan across the array and keep track of the position of zero
+if we know get a non zero value, and we swap it with the zero position
+At the same time we try to keep the correct position of zero
+Finally we can remove the zero to the end
+(Attention: we should know that the case that the value zero index which will not be equal to the index i when there are ajacent zero in the array )
+"""
 class Solution(object):
     def moveZeroes(self, nums):
         """

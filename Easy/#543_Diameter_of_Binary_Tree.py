@@ -22,6 +22,14 @@ class TreeNode(object):
         self.left = None
         self.right = None
 
+# Solution:
+# 1. First of all we need to understand how to get the depth of a binary treee
+# 2. Assume that we get the max depth of a node's left child, and the max depth of a node's right
+# child, then every time we record this 2 sum in a vaibl, named ans. when we return back to every
+# node
+# 3. we get a node's max depth (left depth + right depth + 1), which included the node itself
+# 4. then we compare the previous number with the current ans, and record the relatively larger one
+# 5. at the end we interate all the node and finally get the maximum path
 
 class Solution(object):
     def diameterOfBinaryTree(self, root):

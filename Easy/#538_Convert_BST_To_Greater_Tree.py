@@ -15,6 +15,11 @@ Output: The root of a Greater Tree like this:
           20     13
 '''
 
+"""
+The key point solution is using the reversed in - order traverse  method to solve the problem. 
+Easy and staright forward.
+But you should know how we do in - order traverse   method for binary search tree (BST)
+"""
 
 # Definition for a binary tree node.
 class TreeNode(object):

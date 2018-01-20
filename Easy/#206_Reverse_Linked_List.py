@@ -3,7 +3,10 @@ Reverse a singly linked list.
 A linked list can be reversed either iteratively or recursively. Could you implement both?
 '''
 
-
+"""
+Be careful that the the variable scope of the nested function.
+We should understand  that we are not allowed to access the outer variable in python 2.7.
+"""
 # Definition for singly-linked list.
 class ListNode(object):
     def __init__(self, x):
