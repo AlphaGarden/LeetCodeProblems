@@ -23,14 +23,25 @@ class Solution(object):
     # Resrusive version
     def __init__(self):
         self.result = []
-    def inorderTraversal(self, root):
-        """
-        :type root: TreeNode
-        :rtype: List[int]
-        """
-        if not root: return None
-        self.inorderTraversal(root.left)
-        self.result.append(root)
-        self.inorderTraversal(root.right)
-        return self.result
+    # def inorderTraversal(self, root):
+    #     """
+    #     :type root: TreeNode
+    #     :rtype: List[int]
+    #     """
+    #     if not root: return None
+    #     self.inorderTraversal(root.left)
+    #     self.result.append(root)
+    #     self.inorderTraversal(root.right)
+    #     return self.result
     # Iterative Version
+    def inorderTraversal(self, root):
+        stack = []
+        while len(stack)!=0 or root:
+            if not root:
+                stack.append(root)
+                root = root.left
+            else:
+                root = stack.pop()
+                self.result.append(root.val)
+                root = root.right
+        return self.result
