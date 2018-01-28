@@ -34,4 +34,3 @@ class Solution(object):
         self.inorderTraversal(root.right)
         return self.result
     # Iterative Version
-
