@@ -6,7 +6,7 @@ class BucketSort:
         if len(array) == 0 or len(array) == 1:
             return array
         else:
-            return self.sort(array,3)
+            return self.sort(array, 3)
 
     def sort(self, array, b_size):
         # 1.Create n empty buckets
