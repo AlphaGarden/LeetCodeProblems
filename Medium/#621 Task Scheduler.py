@@ -19,6 +19,8 @@ The number of tasks is in the range [1, 10000].
 The integer n is in the range [0, 100].
 """
 
+# Solution: Greedy Algorithm
+
 
 class Solution(object):
     def leastInterval(self, tasks, n):
@@ -27,6 +29,10 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+        # we need to know how many different types of tasks in the list
+        task_table = {i: tasks.count(i) for i in tasks}
+
+
 
 if __name__ == '__main__':
    test_case = ["A","A","A","B","B","B"]
