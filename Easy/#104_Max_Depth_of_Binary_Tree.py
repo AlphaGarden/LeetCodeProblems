@@ -41,4 +41,4 @@ r1r2.right = r1r2r3
 
 # Test
 solution = Solution()
-print solution.maxDepth(root)
+print(solution.maxDepth(root))

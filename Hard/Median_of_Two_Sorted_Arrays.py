@@ -27,4 +27,4 @@ class Solution(object):
 solution = Solution()
 numlist1 = [1,4,6,7,8]
 numlist2 = [4,8,9]
-print "The result is: " + solution.findMedianSortedArrays(numlist1,numlist2)
+print ("The result is: " + solution.findMedianSortedArrays(numlist1,numlist2))

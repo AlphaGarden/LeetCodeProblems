@@ -41,5 +41,5 @@ class Solution(object):
         return count
 
 soluction = Solution()
-print soluction.subarraySum([1,2,3,4,5],9)
+print (soluction.subarraySum([1,2,3,4,5],9))
 

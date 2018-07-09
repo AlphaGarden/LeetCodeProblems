@@ -109,7 +109,7 @@ solution = Solution()
 cur = solution.in_place_mergeTwoLists(ln10,ln20)
 while(True):
     if cur != None:
-        print cur.val
+        print (cur.val)
         cur = cur.next
     else:
         break

@@ -35,4 +35,4 @@ class Solution(object):
         return ans
 solution = Solution()
 testcase1 = [-2,1,2]
-print solution.maxSubArray2(testcase1)
+print (solution.maxSubArray2(testcase1))

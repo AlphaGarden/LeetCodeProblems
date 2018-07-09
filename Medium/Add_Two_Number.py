@@ -61,7 +61,7 @@ l2.next = ListNode(2)
 # l2.next.next = ListNode(4)
 test = Solution()
 result = test.addTwoNumbers(l1,l2)
-print result
+print (result)
 # while(testNode.next!=None):
 #     print ('['+str(testNode.val)+'->')
 #     testNode = testNode.next

@@ -20,4 +20,4 @@ class Solution(object):
 
 solution = Solution()
 testcase1 = [3,3,3]
-print solution.removeElement(testcase1,3)
+print (solution.removeElement(testcase1,3))

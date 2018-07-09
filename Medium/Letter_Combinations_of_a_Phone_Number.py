@@ -31,7 +31,7 @@ class Solution(object):
             '8':'tuv',
             '9':'wxyz'
         }
-        return reduce(lambda x, y: [i + j for i in x for j in y], [num_dicts[i] for i in digits],[''])
+        return (self.reduce(lambda x, y: [i + j for i in x for j in y], [num_dicts[i] for i in digits],['']))
 solution = Solution()
 input_string = "2"
-print solution.letterCombinations(input_string)
+print (solution.letterCombinations(input_string))

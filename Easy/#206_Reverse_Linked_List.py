@@ -67,5 +67,5 @@ l3.next = l4
 
 temp = solution.reverseList(root)
 while (temp):
-    print temp.val
+    print (temp.val)
     temp = temp.next

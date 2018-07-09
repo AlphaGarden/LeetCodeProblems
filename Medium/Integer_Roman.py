@@ -38,11 +38,11 @@ class Solution(object):
             elif i==-4:
                 res = self.valueOfDigit3(str_s[-4])+res
             else:
-                print 'error on for-loop'
+                print ('error on for-loop')
         return res
 
 
 
 testnum='3009'
 solution = Solution()
-print solution.intToRoman(testnum)
+print (solution.intToRoman(testnum))

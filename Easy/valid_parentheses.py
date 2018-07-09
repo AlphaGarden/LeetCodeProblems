@@ -45,5 +45,5 @@ class Solution(object):
         return stack==[]
 solution = Solution()
 teststr = "([)][][][][][()(]["
-print "The result of test result is " + str(solution.isValid(teststr))
+print ("The result of test result is " + str(solution.isValid(teststr)))
 

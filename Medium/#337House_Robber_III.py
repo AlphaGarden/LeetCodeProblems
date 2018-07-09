@@ -28,13 +28,13 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
-        def rob(self, root):
+    def rob(self, root):
         """
         :type root: TreeNode
         :rtype: int
         """
         if not root: return 0
-        return max(self.dfs(root), (self.dfs(root.left) + self.dfs(root.right)))
+        return (max(self.dfs(root), (self.dfs(root.left) + self.dfs(root.right))))
     # pre_order
     def dfs(self,root):
         if not root: return 0
@@ -43,16 +43,16 @@ class Solution(object):
         if not root.left or not root.right:
             return root.val + self.dfs((root.left or root.right).left) + self.dfs((root.left or root.right).right)
         return root.val+ self.dfs(root.left.left) + self.dfs(root.left.right) + self.dfs(root.right.left) + self.dfs(root.right.right)
-    def basic_dfs(self,root):
-if __name__ == '__main__':
-    solution = Solution()
-    root = TreeNode(3)
-    l1 = TreeNode(2)
-    r1 = TreeNode(3)
-    l1r2 = TreeNode(3)
-    r1r2 = TreeNode(1)
-    root.left = l1
-    root.right = r1
-    l1.right = l1r2
-    r1.right = r1r2
-    solution.dfs(root)
+def basic_dfs(self,root):
+    if __name__ == '__main__':
+        solution = Solution()
+        root = TreeNode(3)
+        l1 = TreeNode(2)
+        r1 = TreeNode(3)
+        l1r2 = TreeNode(3)
+        r1r2 = TreeNode(1)
+        root.left = l1
+        root.right = r1
+        l1.right = l1r2
+        r1.right = r1r2
+        solution.dfs(root)

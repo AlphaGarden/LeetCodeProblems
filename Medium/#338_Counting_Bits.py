@@ -30,4 +30,4 @@ class Solution(object):
 
 solution  = Solution()
 
-print solution.countBits(100)
+print (solution.countBits(100))

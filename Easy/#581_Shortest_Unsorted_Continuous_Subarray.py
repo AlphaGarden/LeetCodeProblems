@@ -71,4 +71,4 @@ class Solution(object):
 if __name__ == '__main__':
     test_case = [2, 6, 4, 8, 10, 9, 15]
     solution = Solution()
-    print solution.findUnsortedSubarray(test_case)
+    print (solution.findUnsortedSubarray(test_case))

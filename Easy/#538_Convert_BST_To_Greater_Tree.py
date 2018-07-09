@@ -62,4 +62,4 @@ r1.left = r1r2
 r1r2.right = r1r2r3
 
 solution = Solution()
-print solution.convertBST(root)
+print(solution.convertBST(root))

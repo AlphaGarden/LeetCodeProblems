@@ -34,4 +34,4 @@ class Solution(object):
 
 string = "ababababaabs"
 solution = Solution()
-print "The length of longest substring of "+string+" is "+str(solution.lengthOfLongestSubstring(string))
+print ("The length of longest substring of "+string+" is "+str(solution.lengthOfLongestSubstring(string)))

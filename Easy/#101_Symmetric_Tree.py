@@ -78,4 +78,4 @@ r1.right = r1r2
 
 # Test
 solution = Solution()
-print solution.isSymmetric(root)
+print(solution.isSymmetric(root))

@@ -64,9 +64,9 @@ if __name__ == '__main__':
     test_case_2 = [[1, 1, 0], [1, 1, 1], [0, 1, 1]]
     test_case_3 = [[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]
     solution = Solution()
-    print solution.findCircleNum(test_case_1)
-    print solution.findCircleNum(test_case_2)
-    print solution.findCircleNum(test_case_3)
+    print (solution.findCircleNum(test_case_1))
+    print (solution.findCircleNum(test_case_2))
+    print (solution.findCircleNum(test_case_3))
 
 
 

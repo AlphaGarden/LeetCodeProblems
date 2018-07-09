@@ -49,7 +49,7 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
     test_case = [[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]
-    print solution.reconstructQueue(test_case)
+    print (solution.reconstructQueue(test_case))
 
     test_case2 = [[1,2,4],[1,2,1],[2,2,2],[1,1,1],[1,1,0]]
-    print sorted(test_case2,key=lambda x:(x[0],x[1],x[2]))
+    print (sorted(test_case2,key=lambda x:(x[0],x[1],x[2])))

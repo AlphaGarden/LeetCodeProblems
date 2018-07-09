@@ -53,4 +53,4 @@ if __name__ == '__main__':
     node1 = ListNode(2)
     root.next = node1
     solution = Solution()
-    print solution.isPalindrome(root)
+    print(solution.isPalindrome(root))

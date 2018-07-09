@@ -38,4 +38,4 @@ if __name__ == '__main__':
    test_case = ["A","A","A","B","B","B"]
    cooling = 2
    solution = Solution()
-   print solution.leastInterval(test_case,cooling)
+   print (solution.leastInterval(test_case,cooling))

@@ -64,4 +64,4 @@ if __name__ == '__main__':
     solution = MergeSort()
     test_case = [2,4,5,2,2,4,5,9,7,1,3,2]
     solution.go(test_case)
-    print test_case
+    print (test_case)

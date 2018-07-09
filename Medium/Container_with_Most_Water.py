@@ -59,4 +59,4 @@ class Solution(object):
 
 a=[1,2,1]
 solution = Solution()
-print solution.maxArea(a)
+print (solution.maxArea(a))

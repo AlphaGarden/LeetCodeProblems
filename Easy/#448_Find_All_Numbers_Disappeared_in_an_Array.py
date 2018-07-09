@@ -34,12 +34,12 @@ class Solution(object):
         # while the value in the array with negative value indicating that the index has occured
         # Fianlly, for those value with positive value, the index of that value will be the answer
         # Since there is no that index to modify the corresponding value to that index
-        for i in xrange(len(nums)):
+        for i in range(len(nums)):
             index = abs(nums[i]) - 1
             nums[index] = -abs(nums[index])
-        return [(i+1) for i in xrange(len(nums)) if nums[i] > 0]
+        return [(i+1) for i in range(len(nums)) if nums[i] > 0]
 
 
 solution = Solution()
 test_sample = [4, 3, 2, 7, 8, 2, 3, 1]
-print solution.findDisappearedNumbers(test_sample)
+print (solution.findDisappearedNumbers(test_sample))

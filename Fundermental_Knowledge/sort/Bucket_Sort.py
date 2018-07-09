@@ -22,10 +22,10 @@ class BucketSort:
         for sub_bucket in bucket:
             sub_bucket.sort()
         # 4. concatenate all buckets into an array
-        return reduce(lambda x, y: x + y, bucket)
+        return self.reduce(lambda x, y: x + y, bucket)
 
 
 if __name__ == '__main__':
     test_case = [2, 4, 5, 2, 2, 4, 5, 9, 7, 1, 3, 2]
     solution = BucketSort()
-    print solution.go(test_case)
+    print (solution.go(test_case))

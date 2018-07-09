@@ -72,6 +72,6 @@ class Solution(object):
 solution = Solution()
 testcases = [1, 2, 3, 4, 5, 6, 35]
 for case in testcases:
-    print solution.climbStairs(case)
+    print (solution.climbStairs(case))
 for case in testcases:
-    print solution.climbStairs2(case)
+    print (solution.climbStairs2(case))

@@ -23,11 +23,11 @@ class Solution(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         zero  = 0
-        for i in xrange(len(nums)):
+        for i in range(len(nums)):
             if nums[i] != 0:
                 # the swapping element for python
                 nums[i], nums[zero] = nums[zero], nums[i]
                 zero += 1
 solution = Solution()
 sample_test = [0, 1, 0, 3, 12]
-print sample_test
+print (sample_test)

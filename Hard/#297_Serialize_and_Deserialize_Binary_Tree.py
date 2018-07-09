@@ -110,4 +110,4 @@ l2.right = r1
 codec = Codec()
 # codec.deserialize(codec.serialize(root))
 # print codec.serialize(root2)
-print codec.deserialize(codec.serialize(root2))
+print (codec.deserialize(codec.serialize(root2)))

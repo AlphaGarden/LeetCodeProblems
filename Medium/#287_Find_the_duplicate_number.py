@@ -57,4 +57,4 @@ if __name__ == '__main__':
 
     solution = Solution()
     test_case = [2,5,9,6,9,3,8,9,7,1]
-    print solution.findDuplicate(test_case)
+    print (solution.findDuplicate(test_case))

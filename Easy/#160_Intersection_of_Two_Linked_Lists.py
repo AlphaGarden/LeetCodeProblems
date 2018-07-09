@@ -51,4 +51,4 @@ if __name__ == '__main__':
     head2 = ListNode(2)
 
     solution = Solution()
-    print solution.getIntersectionNode(head1,head2)
+    print(solution.getIntersectionNode(head1,head2))

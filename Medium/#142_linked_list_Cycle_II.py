@@ -56,4 +56,4 @@ if __name__ == '__main__':
     head.next = head
 
     solution = Solution()
-    print solution.detectCycle(head)
+    print (solution.detectCycle(head))

@@ -35,5 +35,5 @@ if __name__ == '__main__':
     test_case_weights = [10, 20, 30]
     test_case_values = [60, 100, 120]
     capacity = 50
-    print solution.knapsack_brute(test_case_values, test_case_weights, capacity, len(test_case_weights) - 1)
-    print solution.knapsack_dp(test_case_values, test_case_weights, capacity, len(test_case_weights) - 1)
+    print (solution.knapsack_brute(test_case_values, test_case_weights, capacity, len(test_case_weights) - 1))
+    print (solution.knapsack_dp(test_case_values, test_case_weights, capacity, len(test_case_weights) - 1))

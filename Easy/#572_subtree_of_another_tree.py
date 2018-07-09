@@ -125,5 +125,5 @@ if __name__ == '__main__':
 
     solution = Solution()
     #
-    print solution.isSubtree(root, root2)
+    print(solution.isSubtree(root, root2))
     # print solution.equal(root2, root2)

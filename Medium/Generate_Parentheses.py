@@ -28,4 +28,4 @@ class Solution(object):
 
 
 solution = Solution()
-print solution.generateParenthesis(20)
+print (solution.generateParenthesis(20))

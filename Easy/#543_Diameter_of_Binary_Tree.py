@@ -65,4 +65,4 @@ r1.left = r1l2
 r1.right = r1r2
 
 solution = Solution()
-print solution.diameterOfBinaryTree(root)
+print(solution.diameterOfBinaryTree(root))

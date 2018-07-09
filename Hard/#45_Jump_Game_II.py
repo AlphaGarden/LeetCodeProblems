@@ -55,4 +55,4 @@ test_case = [
 ]
 
 for case in test_case:
-    print solution.jump(case)
+    print (solution.jump(case))

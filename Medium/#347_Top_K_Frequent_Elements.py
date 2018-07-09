@@ -27,7 +27,7 @@ class Solution(object):
         for sub_bucket in bucket:
             sub_bucket.sort(key=lambda x: x[1], reverse= True)
         # 4. concatenate all buckets into an array
-        return reduce(lambda x,y: x + y, bucket)
+        return self.reduce(lambda x,y: x + y, bucket)
 
     def topKFrequent(self, nums, k):
         """
@@ -65,5 +65,5 @@ if __name__ == '__main__':
     test_case = [1,1,1,2,2,3,7,7,7,7,7,7,7]
     pick = 2
     solution = Solution()
-    print solution.topKFrequent(test_case,pick)
+    print (solution.topKFrequent(test_case,pick))
 

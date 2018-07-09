@@ -57,5 +57,5 @@ if __name__ == '__main__':
     partition_test_case = [10, 80, 30, 90, 40, 50, 70]
     solution.go(test_case)
     solution.partition(partition_test_case, 0, len(partition_test_case) - 1)
-    print partition_test_case
-    print test_case
+    print (partition_test_case)
+    print (test_case)

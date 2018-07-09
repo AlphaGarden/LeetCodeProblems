@@ -38,4 +38,4 @@ class Solution(object):
 if __name__ == '__main__':
     test_case = [1]
     solution = Solution()
-    print solution.rob(test_case)
+    print(solution.rob(test_case))

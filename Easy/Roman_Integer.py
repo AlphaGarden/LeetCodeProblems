@@ -40,4 +40,4 @@ class Solution(object):
 
 testnum="MCMXCVI"
 solution = Solution()
-print solution.romanToInt(testnum)
+print (solution.romanToInt(testnum))

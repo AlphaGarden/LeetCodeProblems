@@ -52,5 +52,5 @@ fourth_node.next = fifth_node
 solution = Solution()
 start = solution.removeNthFromEnd(head,1)
 while start != None:
-    print start.val
+    print (start.val)
     start = start.next

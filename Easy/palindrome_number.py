@@ -18,4 +18,4 @@ class Solution(object):
 s = Solution()
 testnum = -2147447412
 
-print s.isPalindrome(testnum)
+print (s.isPalindrome(testnum))

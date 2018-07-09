@@ -70,5 +70,5 @@ if __name__ == '__main__':
 
     # Initialize the solution
     solution = Solution()
-    print solution.pathSum(root,3)
-print  bool(0)
+    print(solution.pathSum(root,3))
+print (bool(0))

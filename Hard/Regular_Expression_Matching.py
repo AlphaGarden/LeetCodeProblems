@@ -65,7 +65,7 @@ class Solution(object):
                     T[i + 1][j + 1] = T[i][j]
                 else:
                     T[i + 1][j + 1] = False
-        print T
+        print (T)
         return T[len_s][len_p]
 
 
@@ -73,4 +73,4 @@ class Solution(object):
 solution = Solution()
 pattern = "aba*"
 text = "abb"
-print solution.isMatch(text,pattern)
+print (solution.isMatch(text,pattern))

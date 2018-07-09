@@ -53,7 +53,7 @@ s2 = [0,0,0]
 s3 = [-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6]
 solution = Solution()
 
-print solution.threeSum(s3)
+print (solution.threeSum(s3))
 
 
 '''

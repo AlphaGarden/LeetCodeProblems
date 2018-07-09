@@ -34,4 +34,4 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
     test_case = [1, 2, 3, 4]
-    print solution.productExceptSelf(test_case)
+    print (solution.productExceptSelf(test_case))

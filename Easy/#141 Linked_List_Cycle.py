@@ -67,7 +67,7 @@ if __name__ == '__main__':
     node2.next = node3
     node3.next = tail
     # case 1: there is not cycle
-    print solution.hasCycle(root)
+    print(solution.hasCycle(root))
     # case 2: there is no cycle
     tail.next = root
-    print solution.hasCycle(root)
+    print(solution.hasCycle(root))

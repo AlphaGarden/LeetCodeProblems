@@ -54,7 +54,7 @@ class Solution(object):
                 hash_table[c] += 1
             else:
                 hash_table[c] = 1
-        print hash_table
+        print(hash_table)
         left = 0
         right = 0
         while right<len(s):
@@ -84,4 +84,4 @@ if __name__ == '__main__':
     test_case_s = "cbaebabacd"
     test_case_p = "abc"
     solution = Solution()
-    print solution.findAnagrams(test_case_s,test_case_p)
+    print(solution.findAnagrams(test_case_s,test_case_p))

@@ -58,4 +58,4 @@ class Solution(object):
         return ans
 solution  = Solution()
 geograph = [['1','0','0'],['0','1','0'],['0','1','1'],['0','0','0','1','0']]
-print solution.numIslands(geograph)
+print (solution.numIslands(geograph))

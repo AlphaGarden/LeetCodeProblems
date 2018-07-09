@@ -45,4 +45,4 @@ testcases = [
 ]
 
 for case in testcases:
-    print solution.canJump(case)
+    print (solution.canJump(case))

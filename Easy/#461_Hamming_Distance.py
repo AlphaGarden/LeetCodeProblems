@@ -67,4 +67,4 @@ class Solution(object):
 solution = Solution()
 t1 = 1
 t2 = 4
-print solution.hammingDistance(t1, t2)
+print(solution.hammingDistance(t1, t2))

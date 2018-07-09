@@ -70,4 +70,4 @@ r1.left = r1l2
 r1.right = r1r2
 
 solution = Solution()
-print solution.invertTree(root)
+print(solution.invertTree(root))

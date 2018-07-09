@@ -43,4 +43,4 @@ class Solution(object):
 if __name__ == '__main__':
     solution = Solution()
     test_case = "abc"
-    print solution.countSubstrings(test_case)
+    print (solution.countSubstrings(test_case))
